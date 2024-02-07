@@ -41,3 +41,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Use I2C communication between the halves (uses D0, D1 automatically)*/
 #define USE_I2C
+
+/* 
+    Store on the controller if it is left or right.
+    Need to flash controllers with different commands:
+        qmk flash -kb delicev3 -km default -bl avrdude-split-left
+        qmk flash -kb delicev3 -km default -bl avrdude-split-right
+*/
+#define EE_HANDS
