@@ -26,11 +26,8 @@
       }
     }
   },
-  "layout_aliases": {
-    "LAYOUT": "LAYOUT_SplitLShift_SplitBackSpace_AnsiEnter"
-  },
   "layouts": {
-    "LAYOUT_SplitLShift_SplitBackSpace_AnsiEnter": {
+    "LAYOUT": {
       "layout": [
         {"label":"ESC", "matrix": [0, 0], "x":0, "y":0}, 
         {"label":"F1", "matrix": [0, 1], "x":1.25, "y":0},
@@ -83,8 +80,8 @@
         {"label":"O", "matrix": [8, 3], "x":13.5, "y":2.25},
         {"label":"P", "matrix": [8, 4], "x":14.8, "y":2.25},
         {"label":"UE", "matrix": [8, 5], "x":15.8, "y":2.25},
-        {"label":"*", "matrix": [8, 6], "x":16.8, "y":2.25},
-        {"label":"|", "matrix": [8, 7], "x":17.8, "y":2.25, "w":1.5},
+        {"label":"+", "matrix": [8, 6], "x":16.8, "y":2.25},
+        {"label":"Backslash", "matrix": [8, 7], "x":17.8, "y":2.25, "w":1.5},
         {"label":"42", "matrix": [8, 9], "x":20.0, "y":2.25},
 
         {"label":"Caps", "matrix": [3, 1], "x":0.69, "y":3.25, "w":1.75},
