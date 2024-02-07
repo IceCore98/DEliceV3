@@ -1,0 +1,143 @@
+{
+  "url": "",
+  "maintainer": "marvin",
+  "processor": "atmega32u4",
+  "bootloader": "caterina",
+  "keyboard_name": "DEliceV3",
+  "manufacturer": "Marvin",
+  "development_board": "promicro",
+  "usb": {
+    "vid": "0xFEED",
+    "pid": "0x0000",
+    "device_version": "0.0.1",
+    "polling_interval":1
+  },
+  "diode_direction": "COL2ROW",
+  "matrix_pins": {
+    "cols": ["F4", "F5", "D4", "D6", "D7", "E6", "B4", "NO_PIN", "NO_PIN", "NO_PIN"],
+    "rows": ["D3", "D2", "B6", "B2", "B3", "B1" ]
+  },
+  "split": {
+    "enabled": true,
+    "matrix_pins": {
+      "right": {
+        "cols": ["F5", "F6", "F7", "B1", "B3", "B2", "B6", "F4", "D7", "E6"],
+        "rows": ["D3", "D2", "D4", "C6", "B4", "B5" ]
+      }
+    }
+  },
+  "layout_aliases": {
+    "LAYOUT": "LAYOUT_SplitLShift_SplitBackSpace_AnsiEnter"
+  },
+  "layouts": {
+    "LAYOUT_SplitLShift_SplitBackSpace_AnsiEnter": {
+      "layout": [
+        {"label":"ESC", "matrix": [0, 0], "x":0, "y":0}, 
+        {"label":"F1", "matrix": [0, 1], "x":1.25, "y":0},
+        {"label":"F2", "matrix": [0, 2], "x":2.25, "y":0},
+        {"label":"F3", "matrix": [0, 3], "x":3.25, "y":0},
+        {"label":"F4", "matrix": [0, 4], "x":4.25, "y":0},
+        {"label":"F5", "matrix": [0, 5], "x":6, "y":0},
+        {"label":"F6", "matrix": [0, 6], "x":7, "y":0},
+        
+        {"label":"F7", "matrix": [6, 0], "x":10.5, "y":0},
+        {"label":"F8", "matrix": [6, 1], "x":11.5, "y":0},
+        {"label":"F9", "matrix": [6, 2], "x":12.75, "y":0},
+        {"label":"F10", "matrix": [6, 3], "x":13.75, "y":0},
+        {"label":"F11", "matrix": [6, 4], "x":14.75, "y":0},
+        {"label":"F12", "matrix": [6, 5], "x":15.75, "y":0},
+        {"label":"Pos1", "matrix": [6, 6], "x":17, "y":0},
+        {"label":"Ende", "matrix": [6, 7], "x":18, "y":0},
+        {"label":"16", "matrix": [6, 8], "x":19, "y":0},
+        {"label":"17", "matrix": [6, 9], "x":20, "y":0},
+        
+        {"label":"18", "matrix": [1, 0], "x":0, "y":1.25},
+        {"label":"19", "matrix": [1, 1], "x":1.8499999999999999, "y":1.25},
+        {"label":"NO1", "matrix": [1, 2], "x":2.85, "y":1.25},
+        {"label":"NO2", "matrix": [1, 3], "x":4.0, "y":1.25},
+        {"label":"NO3", "matrix": [1, 4], "x":5.0, "y":1.25},
+        {"label":"NO4", "matrix": [1, 5], "x":6.0, "y":1.25},
+        {"label":"NO5", "matrix": [1, 6], "x":7.0, "y":1.25},
+
+        {"label":"NO6", "matrix": [7, 0], "x":10.5, "y":1.25},
+        {"label":"NO7", "matrix": [7, 1], "x":11.5, "y":1.25},
+        {"label":"NO8", "matrix": [7, 2], "x":12.5, "y":1.25},
+        {"label":"NO9", "matrix": [7, 3], "x":13.5, "y":1.25},
+        {"label":"NO0", "matrix": [7, 4], "x":14.62, "y":1.25},
+        {"label":"?", "matrix": [7, 5], "x":15.62, "y":1.25},
+        {"label":"`", "matrix": [7, 6], "x":16.62, "y":1.25},
+        {"label":"BACK", "matrix": [7, 7], "x":17.62, "y":1.25},
+        {"label":"Entf", "matrix": [7, 8], "x":18.62, "y":1.25},
+        {"label":"27", "matrix": [7, 9], "x":20.0, "y":1.25},
+
+        {"label":"TAB", "matrix": [2, 1], "x":1.15, "y":2.25, "w":1.5},
+        {"label":"Q", "matrix": [2, 2], "x":2.65, "y":2.25},
+        {"label":"W", "matrix": [2, 3], "x":4.0, "y":2.25},
+        {"label":"E", "matrix": [2, 4], "x":5.0, "y":2.25},
+        {"label":"R", "matrix": [2, 5], "x":6.0, "y":2.25},
+        {"label":"T", "matrix": [2, 6], "x":7.0, "y":2.25},
+
+        {"label":"Z", "matrix": [8, 0], "x":10.5, "y":2.25},
+        {"label":"U", "matrix": [8, 1], "x":11.5, "y":2.25},
+        {"label":"I", "matrix": [8, 2], "x":12.5, "y":2.25},
+        {"label":"O", "matrix": [8, 3], "x":13.5, "y":2.25},
+        {"label":"P", "matrix": [8, 4], "x":14.8, "y":2.25},
+        {"label":"UE", "matrix": [8, 5], "x":15.8, "y":2.25},
+        {"label":"*", "matrix": [8, 6], "x":16.8, "y":2.25},
+        {"label":"|", "matrix": [8, 7], "x":17.8, "y":2.25, "w":1.5},
+        {"label":"42", "matrix": [8, 9], "x":20.0, "y":2.25},
+
+        {"label":"Caps", "matrix": [3, 1], "x":0.69, "y":3.25, "w":1.75},
+        {"label":"A", "matrix": [3, 2], "x":2.4499999999999997, "y":3.25},
+        {"label":"S", "matrix": [3, 3], "x":4.0, "y":3.25},
+        {"label":"D", "matrix": [3, 4], "x":5.0, "y":3.25},
+        {"label":"F", "matrix": [3, 5], "x":6.0, "y":3.25},
+        {"label":"G", "matrix": [3, 6], "x":7.0, "y":3.25},
+
+        {"label":"H", "matrix": [9, 0], "x":10.5, "y":3.25},
+        {"label":"J", "matrix": [9, 1], "x":11.5, "y":3.25},
+        {"label":"K", "matrix": [9, 2], "x":12.5, "y":3.25},
+        {"label":"L", "matrix": [9, 3], "x":13.5, "y":3.25},
+        {"label":"OE", "matrix": [9, 4], "x":15.04, "y":3.25},
+        {"label":"AE", "matrix": [9, 5], "x":16.04, "y":3.25},
+        {"label":"Enter", "matrix": [9, 6], "x":17.04, "y":3.25, "w":2.25},
+        {"label":"54", "matrix": [9, 9], "x":20.0, "y":3.25},
+
+        {"label":"LSHIFT", "matrix": [4, 0], "x":0, "y":4.25, "w":1.25},
+        {"label":">", "matrix": [4, 1], "x":1.25, "y":4.25},
+        {"label":"Y", "matrix": [4, 2], "x":2.25, "y":4.25},
+        {"label":"X", "matrix": [4, 3], "x":4, "y":4.25},
+        {"label":"C", "matrix": [4, 4], "x":5, "y":4.25},
+        {"label":"V", "matrix": [4, 5], "x":6, "y":4.25},
+        {"label":"B", "matrix": [4, 6], "x":7, "y":4.25},
+        {"label":"82", "matrix": [5, 6], "x":8, "y":4.25},
+
+        {"label":"81", "matrix": [11, 0], "x":9.5, "y":4.25},
+        {"label":"N", "matrix": [10, 0], "x":10.5, "y":4.25},
+        {"label":"M", "matrix": [10, 1], "x":11.5, "y":4.25},
+        {"label":";", "matrix": [10, 2], "x":12.5, "y":4.25},
+        {"label":":", "matrix": [10, 3], "x":13.5, "y":4.25},
+        {"label":"_", "matrix": [10, 4], "x":15.25, "y":4.25},
+        {"label":"RSHIFT", "matrix": [10, 5], "x":16.25, "y":4.25, "w":1.75},
+        {"label":"AUP", "matrix": [10, 8], "x":18.5, "y":4.75},
+        {"label":"64", "matrix": [10, 9], "x":20, "y":4.25},
+
+        {"label":"LSTRG", "matrix": [5, 0], "x":0, "y":5.25, "w":1.25},
+        {"label":"LWIN", "matrix": [5, 1], "x":1.25, "y":5.25, "w":1.5},
+        {"label":"LFn1", "matrix": [5, 2], "x":4.25, "y":5.25},
+        {"label":"Alt", "matrix": [5, 3], "x":5.25, "y":5.25, "w":1.25},
+        {"label":"LFn2", "matrix": [5, 4], "x":6.5, "y":5.25, "w":1.25},
+        {"label":"SPACE", "matrix": [5, 5], "x":7.75, "y":5.25, "w":1.25},
+
+        {"label":"RBACK", "matrix": [11, 1], "x":9.5, "y":5.25, "w":1.25},
+        {"label":"RSTRG", "matrix": [11, 2], "x":10.75, "y":5.25, "w":1.25},
+        {"label":"ALTGR", "matrix": [11, 3], "x":12, "y":5.25, "w":1.25},
+        {"label":"'", "matrix": [11, 4], "x":15, "y":5.75},
+        {"label":"CTRL", "matrix": [11, 5], "x":16, "y":5.75},
+        {"label":"ALEFT", "matrix": [11, 6], "x":17.5, "y":5.75},
+        {"label":"ADOWN", "matrix": [11, 8], "x":18.5, "y":5.75},
+        {"label":"ARIGHT", "matrix": [11, 9], "x":19.5, "y":5.75}
+      ]
+    }
+    }
+}
