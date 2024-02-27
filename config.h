@@ -49,3 +49,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         qmk flash -kb delicev3 -km default -bl avrdude-split-right
 */
 #define EE_HANDS
+//#define MASTER_RIGHT // if usb is always connected to the right side
+
+/*
+Don't exactly know what this does.
+If keyboard freezes after sleep, try to remove it.
+*/
+#define SPLIT_USB_DETECT
